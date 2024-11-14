@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Write a program to find total number of alphabets, digits or special character in a string.</h2>
+    <script>
+        let inputstring=prompt("enter a string")
+        let alphabets=0
+        let digits=0
+        let specialchar=0;
+        for(let i=0;i<inputstring.length;i++)
+    {
+        let char=inputstring[i]
+        if((char>='A' && char<='Z')||(char>='a' && char <='z'))
+         {
+        alphabets++
+         }
+        else if(char>='0' && char <='9')
+        {
+        digits++
+        }
+        else
+        {
+            specialchar++
+        }
+    }
+    document.write("Albhabets "+alphabets+"<br>")
+    document.write("digits "+digits+"<br>")
+    document.write("Specialchar "+specialchar+"<br>")
+    </script>
+</body>
+</html>

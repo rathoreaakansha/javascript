@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h2>Write a program to find first occurrence of a character in a given string.</h2> 
+   <script>
+    let str=prompt("enter a string")
+    let foundchar=prompt("enter charcter to find")
+    let index=-1
+    for(let i=0;i<str.length;i++)
+   {
+    if(str[i]===foundchar)
+   {
+        index=i
+        break
+   }
+}
+if(index!=-1)
+{
+    document.write(`<br> first occurance of ${foundchar} is at index : ${index}`)
+}
+else
+{
+    document.write(`<br> character ${foundchar} is not finding in string`)
+}
+   </script>
+</body>
+</html>
