@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>find duplicate using indexof and filter method</h2>
+    <script>
+        function findduplicates(arr)
+        {
+            return arr.filter((item,index)=>arr.indexOf(item)!==index)
+        }
+        let arr=[1,2,3,4,2,3,4,5]
+        document.write("duplicate value in array is ",findduplicates(arr))
+    </script>
+</body>
+</html>
